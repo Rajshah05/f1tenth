@@ -1,0 +1,5 @@
+<launch>
+  <include file="$(find f1tenth_simulator)/launch/simulator.launch" />
+  <node type="laser_scan_pub_sub" name="lab1" pkg="f1tenth" args="-d $(find f1tenth_simulator)/launch/simulator.rviz" />
+</launch>
+
